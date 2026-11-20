@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/authrs-store",
+  "crates/authrs-store-postgres",
+  "crates/authrs-store-sqlite",
+  "crates/authrs",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["Atomico Labs"]
+repository = "https://github.com/atomicolabs/authrs"
+homepage = "https://github.com/atomicolabs/authrs"

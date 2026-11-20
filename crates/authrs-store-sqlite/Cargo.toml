@@ -1,0 +1,16 @@
+[package]
+name = "authrs-store-sqlite"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "SQLCipher adapter for the authrs Store trait."
+readme = "../../README.md"
+keywords = ["authentication", "sqlite", "sqlcipher"]
+categories = ["authentication"]
+
+[dependencies]
+authrs-store = { path = "../authrs-store" }
+rusqlite = { version = "0.32", features = ["bundled-sqlcipher-vendored-openssl"] }

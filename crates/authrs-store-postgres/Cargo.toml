@@ -1,0 +1,17 @@
+[package]
+name = "authrs-store-postgres"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Postgres adapter for the authrs Store trait."
+readme = "../../README.md"
+keywords = ["authentication", "postgres"]
+categories = ["authentication"]
+
+[dependencies]
+authrs-store = { path = "../authrs-store" }
+bytes = "1"
+postgres = { version = "0.19", features = ["with-uuid-1"] }
